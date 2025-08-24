@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Page</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/eventstyle.css">
+     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+        <!-- main header start -->
+          <header class="main-header">
+        <div class="logo">
+            <span class="logo-maroon">
+               <img src="images/logo.png" alt="WSP Logo"> 
+            </span>  
+            
+             <!-- <span class="logo-gold">
+                 <img src="images/logo.png" alt="WSP Logo"> 
+             </span> -->
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="aboutuswsp.html" class="nav-link">About WSP</a></li>
+                <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+                <!-- <li class="nav-item"><a href="#events" class="nav-link">Events</a></li> -->
+                <li class="nav-item"><a href="#media" class="nav-link">Media Hub</a></li>
+                <li class="nav-item"><a href="#rankings" class="nav-link">Results & Rankings</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+      
+    </header> 
+
+        <!-- main header end -->
+
+
+    <header class="hero-section">
+        <h1 class="hero-title">Latest Upcoming Events</h1>
+       
+    </header>
+
+        <div class="cta-buttons" style="padding: 25px;"><a  href="event-details.html" class="cta-button cta-maroon"> Click Me For Events Details</a></div>
+      
+             
+    <main class="container">
+        
+        <section class="filters-and-calendar">
+            <aside class="event-filters">
+                <h2>Filters</h2>
+                <div class="filter-group">
+                    <label for="state-filter">State</label>
+                    <select id="state-filter">
+                        <option value="">All States</option>
+                        <option value="CA">California</option>
+                        <option value="TX">Texas</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="date-range-filter">Date Range</label>
+                    <input type="date" id="date-range-filter-start">
+                    <input type="date" id="date-range-filter-end">
+                </div>
+                <div class="filter-group">
+                    <label for="type-filter">Event Type</label>
+                    <select id="type-filter">
+                        <option value="">All Types</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Open">Open</option>
+                        <option value="Finals">Finals</option>
+                    </select>
+                </div>
+            </aside>
+
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button id="prev-month">&lt;</button>
+                    <h3 id="current-month-year"></h3>
+                    <button id="next-month">&gt;</button>
+                </div>
+                <div class="calendar-grid">
+                    <div class="calendar-day-name">Sun</div>
+                    <div class="calendar-day-name">Mon</div>
+                    <div class="calendar-day-name">Tue</div>
+                    <div class="calendar-day-name">Wed</div>
+                    <div class="calendar-day-name">Thu</div>
+                    <div class="calendar-day-name">Fri</div>
+                    <div class="calendar-day-name">Sat</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="event-listings">
+
+        </section>
+
+         <!-- footer section -->
+   
+    <footer class="site-footer" style="margin-top: 40px;">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Event Street, City, State 54321</p>
+                <p><i class="fas fa-envelope"></i> info@yourevents.com</p>
+                <p><i class="fas fa-phone-alt"></i> (123) 456-7890</p>
+                <p><i class="fas fa-headset"></i> **Event Hotline:** (123) 456-7891</p>
+            </div>
+
+            <div class="footer-section social-links">
+                <h4>Follow Us</h4>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025. All rights reserved Developer B. Rashid.</p>
+            <p>Powered by <a href="#" target="_blank" class="developer-link">Fiza Enterprise, Bangladesh.</a></p>
+        </div>
+    </footer>
+
+    </main>
+
+    <script src="js/eventscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/eventstyle.css">
+    <style>
+        .hero-banner {
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+        .details-content {
+            padding: 40px;
+        }
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid var(--secondary-color);
+            margin-bottom: 20px;
+        }
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .tab-btn.active {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        #map {
+            width: 100%;
+            height: 400px;
+            background-color: #333;
+            border: 1px solid var(--secondary-color);
+            margin-top: 20px;
+            /* Placeholder for a real map like Google Maps API */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero-banner" style="background-image: url('images/eventDetailsBackImage.jpg');">
+
+    </header>
+    <!-- header contant start -->
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-maroon">
+               <img src="images/logo.png" alt="WSP Logo"> 
+            </span>  
+            
+             <!-- <span class="logo-gold">
+                 <img src="images/logo.png" alt="WSP Logo"> 
+             </span> -->
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                
+                <li class="nav-item"><a href="aboutuswsp.html" class="nav-link">About WSP</a></li>
+                <!-- <li class="nav-item"><a href="#about" class="nav-link">About WSP</a></li> -->
+                <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+                <!-- <li class="nav-item"><a href="#events" class="nav-link">Events</a></li> -->
+                <li class="nav-item"><a href="#media" class="nav-link">Media Hub</a></li>
+                <li class="nav-item"><a href="#rankings" class="nav-link">Results & Rankings</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+      
+    </header> 
+    <!-- hrader contant end -->
+
+    <!-- main contant -->
+
+    <main class="container">
+        <div class="details-content">
+            <h1>Event Name</h1>
+            <p><strong>Date:</strong> August 15, 2025</p>
+            <p><strong>Location:</strong> California State Fairgrounds</p>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="overview">Overview</button>
+                <button class="tab-btn" data-tab="registration">Registration</button>
+                <button class="tab-btn" data-tab="stalls">Stalls & RV Info</button>
+                <button class="tab-btn" data-tab="results">Results</button>
+                <button class="tab-btn" data-tab="photos">Photos</button>
+            </div>
+
+            <div id="overview" class="tab-content active">
+                <p>Detailed overview of the event, including schedule, rules, and general information.
+                </p>
+            </div>
+            <div id="registration" class="tab-content">
+                <p>Information on how to register for the event, including links and deadlines.</p>
+            </div>
+            <div id="stalls" class="tab-content">
+                <p>Details about stall rentals and RV hookups, including pricing and booking information.</p>
+            </div>
+            <div id="results" class="tab-content">
+                <p>Past results and standings for this event.</p>
+            </div>
+            <div id="photos" class="tab-content">
+                <p>Photo gallery from the event.</p>
+            </div>
+        </div>
+        <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d1a53ae9%3A0x633d26217e123456!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1678901234567!5m2!1sen!2sus"
+                width="1200"
+                height="450"
+                style="border: 2px solid #FFD700;"
+                allowfullscreen=""
+                 loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+
+        <!-- <div id="map" > -->
+             <!-- <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d1a53ae9%3A0x633d26217e123456!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1678901234567!5m2!1sen!2sus"
+
+                width = "1920"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                 loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe> -->
+
+
+            <!-- <p>
+                Integrated map will go here (e.g., Google Maps Embed)
+            </p> --> 
+        <!-- </div> -->
+
+
+
+         <!-- footer section -->
+   
+    <footer class="site-footer" style="margin-top: 40px;">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Event Street, City, State 54321</p>
+                <p><i class="fas fa-envelope"></i> info@yourevents.com</p>
+                <p><i class="fas fa-phone-alt"></i> (123) 456-7890</p>
+                <p><i class="fas fa-headset"></i> **Event Hotline:** (123) 456-7891</p>
+            </div>
+
+            <div class="footer-section social-links">
+                <h4>Follow Us</h4>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025. All rights reserved Developer B. Rashid.</p>
+            <p>Powered by <a href="#" target="_blank" class="developer-link">Fiza Enterprise, Bangladesh.</a></p>
+        </div>
+    </footer>
+
+    </main>
+    
+    <script>
+        const tabs = document.querySelector('.tabs');
+        tabs.addEventListener('click', (e) => {
+            if (e.target.classList.contains('tab-btn')) {
+                // Remove 'active' class from all buttons and content
+                document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+                // Add 'active' class to the clicked button and corresponding content
+                e.target.classList.add('active');
+                const tabId = e.target.dataset.tab;
+                document.getElementById(tabId).classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
