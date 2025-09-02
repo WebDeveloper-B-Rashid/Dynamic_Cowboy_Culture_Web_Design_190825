@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="css/eventregistration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+        <div class="registration-form">
+            <h2>Event Registration Funnel</h2>
+            <div class="progress-bar">
+                <div class="progress-step active" id="step1-indicator">1. Choose Event</div>
+                <div class="progress-step" id="step2-indicator">2. Stalls/RV</div>
+                <div class="progress-step" id="step3-indicator">3. Checkout</div>
+            </div>
+
+            <form id="regForm">
+
+                <section id="step1" class="form-step active">
+                    <h3>Choose Your Event</h3>
+                    <div class="form-group">
+                        <label for="eventSelect">Select an Event</label>
+                        <select id="eventSelect" required>
+                            <option value="">-- Please Select --</option>
+                            <option value="mtn_rush">Mountain Rush Championship</option>
+                            <option value="urban_gauntlet">Urban Bike Gauntlet</option>
+                            <option value="desert_rally">Desert Dust Rally</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="nextStep(2)">Next</button>
+                </section>
+
+                <section id="step2" class="form-step">
+                    <h3>Add-ons & Membership</h3>
+                    <div class="form-group">
+                        <label for="stalls">Number of Stalls</label>
+                        <input type="number" id="stalls" min="0" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="rvSpots">Number of RV Spots</label>
+                        <input type="number" id="rvSpots" min="0" value="0">
+                    </div>
+                    
+                    <div class="membership-info">
+                        <h4>Membership Details</h4>
+                        <p>Enjoy exclusive discounts and early access! Already a member? Your discount will be applied at checkout.</p>
+                        <button type="button" class="btn btn-secondary">Learn about Membership</button>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="prevStep(1)">Previous</button>
+                        <button type="button" class="btn btn-primary" onclick="nextStep(3)">Next</button>
+                    </div>
+                </section>
+
+                <section id="step3" class="form-step">
+                    <h3>Secure Checkout</h3>
+                    <div class="summary">
+                        <h4>Order Summary</h4>
+                        <p id="eventSummary"></p>
+                        <p id="addOnsSummary"></p>
+                        <p class="total">Total: <span id="totalPrice">$0.00</span></p>
+                    </div>
+
+                    <div class="payment-section">
+                        <h4>Payment Information</h4>
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" placeholder="**** **** **** ****" required>
+                        </div>
+                        <div class="form-group-split">
+                            <div class="form-group">
+                                <label for="expiryDate">Expiry Date</label>
+                                <input type="text" id="expiryDate" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" placeholder="***" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="prevStep(2)">Previous</button>
+                        <button type="submit" class="btn btn-primary">Complete Registration</button>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/eventregistration.js"></script>
+</body>
+</html>

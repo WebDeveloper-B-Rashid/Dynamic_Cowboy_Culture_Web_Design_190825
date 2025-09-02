@@ -1,0 +1,164 @@
+:root {
+    --primary-maroon: #800000;
+    --background-black: #000000;
+    --accent-gold: #FFD700;
+    --text-white: #FFFFFF;
+    --text-light-grey: #CCC;
+
+    --font-headline: 'Roboto Condensed', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+/* Base Styles */
+body {
+    font-family: var(--font-body);
+    background-color: var(--background-black);
+    color: var(--text-light-grey);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-headline);
+    text-transform: uppercase;
+    color: var(--text-white);
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header {
+    background-color: var(--primary-maroon);
+    color: var(--text-white);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.contact-form-container,
+.contact-info-container {
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 2rem;
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--text-white);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #222;
+    color: var(--text-white);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-maroon {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-maroon);
+    color: var(--text-white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-maroon:hover {
+    background-color: #a00000;
+    transform: translateY(-2px);
+}
+
+/* Contact Info Styles */
+.info-block {
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--accent-gold);
+    padding-left: 1rem;
+}
+
+.info-block h3 {
+    color: var(--accent-gold);
+    margin-top: 0;
+}
+
+.gold-icon {
+    color: var(--accent-gold);
+    margin-right: 0.5rem;
+}
+
+/* Google Maps Section */
+.map-section {
+    margin-bottom: 2rem;
+}
+
+.map-container {
+    border: 2px solid var(--accent-gold);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 450px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+}
