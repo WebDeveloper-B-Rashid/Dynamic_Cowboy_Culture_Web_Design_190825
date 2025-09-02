@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Hub</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/mediahub.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Media Hub</h1>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                     <li><a href="index.html">Home</a></li>
+                    <li><a href="#galleries">Photo Galleries</a></li>
+                    <li><a href="#videos">Video Highlights</a></li>
+                    <li><a href="#social">Social Feed</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="galleries" class="content-section">
+            <div class="container">
+                <h2>Photo Galleries</h2>
+                <p class="section-description">High-resolution images sorted by event.</p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/mediahub2.jpg">
+
+                        <!-- <img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Corporate Gala 2025"> -->
+                         
+                        <div class="gallery-caption">
+                            <h3>Corporate Gala 2025</h3>
+                            <p>An evening of excellence and celebration.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                          <img src="images/mediahub.jpg">
+
+                        <!-- <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd51725?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Product Launch Event"> -->
+                        <div class="gallery-caption">
+                            <h3>Product Launch Event</h3>
+                            <p>Unveiling the future of technology.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Team Building Workshop">
+                        <div class="gallery-caption">
+                            <h3>Team Building Workshop</h3>
+                            <p>Fostering collaboration and spirit.</p>
+                        </div>
+                    </div>
+                     </div>
+            </div>
+        </section>
+
+        <section id="videos" class="content-section">
+            <div class="container">
+                <h2>Video Highlights</h2>
+                <p class="section-description">Embedded YouTube & Vimeo reels showcasing our best moments.</p>
+                
+                <div class="video-grid">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-wrapper">
+                        <iframe src="https://player.vimeo.com/video/137859292" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="social" class="content-section">
+            <div class="container">
+                <h2>Social Media Feed</h2>
+                <p class="section-description">Live Instagram highlights styled in our signature theme.</p>
+                
+                <div class="social-feed-grid">
+                    <div class="social-post">
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Social media image 1">
+                        <div class="social-post-overlay">
+                            <div class="social-post-content">
+                                <i class="fab fa-instagram"></i>
+                                <p>What an incredible night! Thanks to everyone who joined us. #EventSuccess #MediaHub</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-post">
+                        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Social media image 2">
+                        <div class="social-post-overlay">
+                            <div class="social-post-content">
+                                <i class="fab fa-instagram"></i>
+                                <p>Behind the scenes at our latest video shoot. Stay tuned! #BTS #VideoProduction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-post">
+                        <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Social media image 3">
+                        <div class="social-post-overlay">
+                            <div class="social-post-content">
+                                <i class="fab fa-instagram"></i>
+                                <p>Celebrating another milestone. Cheers to the team! #Teamwork #Celebration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="social-widget-note">
+                    <p><strong>Note:</strong> This is a styled placeholder. To integrate a live feed, replace the content of `social-feed-grid` with an embed code from a service like <a href="https://elfsight.com/" target="_blank">Elfsight</a>.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Media Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/mediahubscript.js"></script>
+</body>
+</html>

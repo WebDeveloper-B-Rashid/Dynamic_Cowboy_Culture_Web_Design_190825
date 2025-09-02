@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 2,
             name: "Texas Open Championships",
             date: "2025-09-22",
-            location: "AT&T Stadium, Arlington, TX",
+            location: "Moulana Vashani Stadium, Dhaka,  Bangladesh, TX",
             type: "Open",
             detailsUrl: "event-details.html?id=2"
         },

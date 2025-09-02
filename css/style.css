@@ -92,7 +92,7 @@ img{
 }
 
 .cta-button {
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
@@ -161,17 +161,20 @@ img{
     /* color: var(--gold); */
     display: flex;
     align-items: center;
+   
     letter-spacing: -2px;
 }
 
-.logo-maroon {
+.logo-maroon img {
     color: var(--maroon);
+    /* bg-color: var(--gold); */
 }
 
 .logo-gold {
     width: 15px;
     height: 15px;
-    background-color: var(--gold);
+     background-color: var(--black);
+    /* background-color: var(--gold); */
     border-radius: 50%;
     margin-left: -5px;
     position: relative;
